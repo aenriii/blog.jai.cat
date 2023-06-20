@@ -1,0 +1,33 @@
+name: gh-pages-publish
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - meow
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 18.x
+            - name: Install dependencies
+              run: npm install
+            
+            - name: Run Hugo
+              uses: crazy-max/ghaction-hugo@v2
+              with:
+                version: latest
+                extended: false
+                args: --cleanDestinationDir --minify --verbose
+            
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4.4.2
+              with:
+                folder: public
+            
+
+
+
