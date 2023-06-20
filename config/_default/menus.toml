@@ -1,0 +1,50 @@
+[[main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 2
+
+[[main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories"
+    weight = 3
+
+[[main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[[main]]
+    identifier = "donate"
+    name = "Donate"
+    url = "https://cash.app/$jdadonut"
+    weight = 5
+
+
+# Social Media Configuration
+
+[[social]]
+    identifier = "twitter"
+    name = "Twitter (main)"
+    url = "https://twitter.com/jaidadonut"
+    weight = 1
+
+[[social]]
+    identifier = "twitter-alt"
+    name = "Twitter (queer alt)"
+    url = "https://twitter.com/jaidadonut"
+    weight = 2
+
+[[social]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/jdadount"
+    weight = 4
